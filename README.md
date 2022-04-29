@@ -8,9 +8,14 @@ E.g: ~$ cron_expression_parser ＂*/15 0 1,15 * 1-5 /usr/bin/find＂
 2. Under dist folder, we can find cron_expression_parser application
 3. Run the program with the full path in the same way as mentioned in the example above
 
-If suppose for any reason above workflow didn't work, one can still run the `cron_expression_parser.py` script in the following way:
+If suppose for any reason above workflow didn't work, one can still run the `cron_expression_parser.py` script in the following way with python3 being installed already:
 
-`cron_expression_parser.py ＂*/15 0 1,15 * 1-5 /usr/bin/find＂`
+`python3 cron_expression_parser.py ＂*/15 0 1,15 * 1-5 /usr/bin/find＂`
+
+If we want to run it as an executable, follow these steps:
+
+1. chmod +x cron_expression_parser.py
+2. Run `./cron_expression_parser.py ＂*/15 0 1,15 * 1-5 /usr/bin/find＂` 
 
 ## Tests that were performed
 All the tests that were performed are mentioned here
